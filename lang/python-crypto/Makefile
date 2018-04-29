@@ -5,6 +5,8 @@
 # See /LICENSE for more information.
 #
 
+include $(TOPDIR)/rules.mk
+
 PKG_NAME:=python-crypto
 PKG_VERSION:=2.6.1
 PKG_RELEASE:=1
