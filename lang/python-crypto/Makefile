@@ -11,9 +11,9 @@ PKG_NAME:=python-crypto
 PKG_VERSION:=2.6
 PKG_RELEASE:=1
 
-PKG_SOURCE:=pycrypto-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/
-PKG_MD5SUM:=88dad0a270d1fe83a39e0467a66a22bb
+PKG_SOURCE:=v$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL:=http://github.com/dlitz/pycrypto/archive
+PKG_MD5SUM:=9e24388059cd9a4acf989cac4b5fff8e
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
