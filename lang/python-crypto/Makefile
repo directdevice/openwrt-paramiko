@@ -15,6 +15,9 @@ PKG_SOURCE:=v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://github.com/dlitz/pycrypto/archive
 PKG_MD5SUM:=9e24388059cd9a4acf989cac4b5fff8e
 
+PKG_BUILD_DIR:=$(BUILD_DIR)/pycrypto-$(PKG_VERSION)
+PKG_BUILD_DEPENDS:=python
+
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
 
