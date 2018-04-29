@@ -5,17 +5,20 @@
 # See /LICENSE for more information.
 #
 
-PKG_NAME:=pycrypto
+PKG_NAME:=python-crypto
 PKG_VERSION:=2.6.1
 PKG_RELEASE:=1
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE:=pycrypto-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/
 PKG_MD5SUM:=55a61a054aa66812daf5161a0d5d7eda
 
 PKG_LICENSE:=Public Domain
 PKG_LICENSE_FILES:=COPYRIGHT
 PKG_MAINTAINER:=Jeffery To <jeffery.to@gmail.com>
+
+PKG_BUILD_DIR:=$(BUILD_DIR)/pycrypto-$(PKG_VERSION)
+PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
