@@ -8,7 +8,7 @@ PKG_SOURCE:=$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://github.com/paramiko/paramiko/archive
 PKG_MD5SUM:=161c71e27076eb1f2fc2fb2705d95a45
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/paramiko-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/python3-paramiko-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=python3
 
 include $(INCLUDE_DIR)/package.mk
