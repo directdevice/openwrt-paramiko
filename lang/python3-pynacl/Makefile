@@ -26,11 +26,12 @@ define Package/python3-pynacl
     +PACKAGE_python3-bcrypt:python3 \
     +PACKAGE_python3-bcrypt:python3-cffi \
     +PACKAGE_python3-bcrypt:python3-six
+  VARIANT:=python3
 endef
 
 define Package/python3-pynacl/description
   Fork of the Networking and Cryptography library
 endef
 
-$(eval $(call Py3Package,python3-pynacl))
-$(eval $(call BuildPackage,python3-pynacl))
+$(eval $(call Py3Package,${PKG_NAME}))
+$(eval $(call BuildPackage,${PKG_NAME}))

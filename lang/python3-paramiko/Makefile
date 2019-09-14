@@ -25,11 +25,12 @@ define Package/python3-paramiko
     +PACKAGE_python3-paramiko:python3-cryptography \
     +PACKAGE_python3-paramiko:python3-pynacl \
     +PACKAGE_python3-paramiko:python3-bcrypt
+  VARIANT:=python3
 endef
 
 define Package/python3-paramiko/description
  Native Python SSHv2 protocol library 
 endef
 
-$(eval $(call Py3Package,python3-paramiko))
-$(eval $(call BuildPackage,python3-paramiko))
+$(eval $(call Py3Package,${PKG_NAME}))
+$(eval $(call BuildPackage,${PKG_NAME}))
