@@ -31,18 +31,5 @@ define Package/python3-paramiko/description
  Native Python SSHv2 protocol library 
 endef
 
-define Build/Compile
-  $(call Build/Compile/PyMod,., \
-      install --prefix="/usr" --root="$(PKG_INSTALL_DIR)" \
-  )
-endef
-
-define Package/python3-paramiko/install
-  $(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
-  $(CP) \
-    $(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
-    $(1)$(PYTHON_PKG_DIR)/
-endef
-
 $(eval $(call Py3Package,python3-paramiko))
 $(eval $(call BuildPackage,python3-paramiko))
