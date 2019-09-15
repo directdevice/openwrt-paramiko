@@ -8,7 +8,7 @@ PKG_SOURCE:=bcrypt-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:= https://files.pythonhosted.org/packages/source/b/bcrypt
 PKG_HASH:=0b0069c752ec14172c5f78208f1863d7ad6755a6fae6fe76ec2c80d13be41e42
 
-PKG_BUILD_DIR:=$(BUILD_DIR)/python3-bcrypt-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=libffi/host
 
 include $(INCLUDE_DIR)/package.mk
@@ -33,5 +33,5 @@ define Package/python3-bcrypt/description
   Modern password hashing
 endef
 
-$(eval $(call Py3Package,${PKG_NAME}))
-$(eval $(call BuildPackage,${PKG_NAME}))
+$(eval $(call Py3Package,$(PKG_NAME))
+$(eval $(call BuildPackage,$(PKG_NAME))
