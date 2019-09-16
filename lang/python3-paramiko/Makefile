@@ -34,5 +34,5 @@ define Package/python3-paramiko/description
  Native Python SSHv2 protocol library 
 endef
 
-$(eval $(call Py3Package,$(PKG_NAME))
-$(eval $(call BuildPackage,$(PKG_NAME))
+$(eval $(call Py3Package,$(PKG_NAME)))
+$(eval $(call BuildPackage,$(PKG_NAME)))

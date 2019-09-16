@@ -33,5 +33,5 @@ define Package/python3-bcrypt/description
   Modern password hashing
 endef
 
-$(eval $(call Py3Package,$(PKG_NAME))
-$(eval $(call BuildPackage,$(PKG_NAME))
+$(eval $(call Py3Package,$(PKG_NAME)))
+$(eval $(call BuildPackage,$(PKG_NAME)))

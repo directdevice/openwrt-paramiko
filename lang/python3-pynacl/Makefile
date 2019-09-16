@@ -34,5 +34,5 @@ define Package/python3-pynacl/description
   Fork of the Networking and Cryptography library
 endef
 
-$(eval $(call Py3Package,$(PKG_NAME))
+$(eval $(call Py3Package,$(PKG_NAME)))
 $(eval $(call BuildPackage,$(PKG_NAME)))
