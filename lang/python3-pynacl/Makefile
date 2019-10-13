@@ -5,10 +5,11 @@ PKG_VERSION:=1.3.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://files.pythonhosted.org/packages/source/P/PyNaCl
-PKG_HASH:=0c6100edd16fefd1557da078c7a31e7b7d7a52ce39fdca2bec29d4f7b6e7600c
+PKG_SOURCE_URL:=http://github.com/pyca/pynacl/archive
+PKG_MD5SUM:=cb6560512d1d2300b3ddbe1a1daf871d
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+HOST_PYTHON3_PACKAGE_BUILD_DEPENDS:="cffi>=1.4.1"
 
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
