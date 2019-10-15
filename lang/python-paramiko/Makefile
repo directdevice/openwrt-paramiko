@@ -4,7 +4,7 @@ PKG_NAME:=python-paramiko
 PKG_VERSION:=1.12.4
 PKG_RELEASE:=1
 
-PKG_SOURCE:=v$(PKG_VERSION).tar.gz
+PKG_SOURCE:=$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://github.com/paramiko/paramiko/archive
 PKG_MD5SUM:=407b1b7bfdc29e6ccb460afbc78f156d
 
