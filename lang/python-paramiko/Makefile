@@ -23,8 +23,8 @@ define Package/python-paramiko
   TITLE:=python-paramiko
   URL:=https://github.com/paramiko/paramiko
   DEPENDS:= \
-    +PACKAGE_python-paramiko:+python \
-    +PACKAGE_python-paramiko:+python-crypto
+    +PACKAGE_python-paramiko:python \
+    +PACKAGE_python-paramiko:python-crypto
   VARIANT:=python
 endef
 
